@@ -1,0 +1,14 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EFEFEF;
+}
+.nav {
+    display: flex; /*расположить элементы в строку*/
+    justify-content: center; /*расположить элементы в центре*/
+     list-style-type: none; /*убрать все точки */
+     padding-left: 0px;
+}
+.nav li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
