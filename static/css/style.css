@@ -1,14 +1,43 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #EFEFEF;
+    color: #333333;
+    font-size: 14px;
+}
+.wrapper {
+    max-width: 1110px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto; /*центровка сайта по середине*/
 }
 .nav {
     display: flex; /*расположить элементы в строку*/
     justify-content: center; /*расположить элементы в центре*/
      list-style-type: none; /*убрать все точки */
-     padding-left: 0px;
+     padding-left: 0px; /*убрать отступ с лево */
 }
 .nav li {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 10px; /*сделать отступ с лево */
+    margin-right: 10px; /*сделать отступ с право */
+}
+.nav li a {
+    text-decoration: none;
+    color: #333333;
+}
+.header {
+    display: flex; /*превратить блочные элементы в строчные */
+    justify-content: space-between; /*растянуть элементы по краям*/
+    align-items: center;
+}
+.logo {
+    color: #66C05D;
+    font-size: 36px;
+    font-weight: 700px; /*жирность текста*/
+}
+.header-info span {
+    font-size: 16px;
+}
+.header-info button {
+    font-size: 14px;
+    border-radius: 10px;
 }
