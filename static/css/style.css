@@ -25,9 +25,14 @@ body {
     color: #333333;
 }
 .header {
-    display: flex; /*превратить блочные элементы в строчные */
-    justify-content: space-between; /*растянуть элементы по краям*/
-    align-items: center;
+    background-color: #fff;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: 10px 0;
+  
 }
 .logo {
     color: #66C05D;
@@ -39,5 +44,12 @@ body {
 }
 .header-info button {
     font-size: 14px;
-    border-radius: 10px;
+    border-radius: 20px;
+    border: #66C05D 2px solid;
+    background-color: transparent; /*transparent Устанавливает прозрачный фон.*/
+    padding: 10px 15px;
+    margin-left: 20px;
+}
+.header-bottom.nav {
+    font-size: 16px;
 }
