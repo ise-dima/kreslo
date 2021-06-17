@@ -14,11 +14,12 @@ body {
     display: flex; /*расположить элементы в строку*/
     justify-content: center; /*расположить элементы в центре*/
      list-style-type: none; /*убрать все точки */
-     padding-left: 0px; /*убрать отступ с лево */
+     padding: 4px 0;
 }
 .nav li {
-    margin-left: 10px; /*сделать отступ с лево */
-    margin-right: 10px; /*сделать отступ с право */
+    margin-left: 15px; /*сделать отступ с лево */
+    margin-right: 15px; /*сделать отступ с право */
+    font-size: 12px;
 }
 .nav li a {
     text-decoration: none;
@@ -38,6 +39,15 @@ body {
     color: #66C05D;
     font-size: 36px;
     font-weight: 700px; /*жирность текста*/
+    display: flex; /* создаёт блочные элементы в строку*/
+    align-items: center; /*центровка*/
+    margin-right: 10px;
+}
+.logo-image {
+    display: block; /*создаёт блок*/
+    width: 80px;
+    height: 80px;
+    background-image: url("../svg/logo.svg");
 }
 .header-info span {
     font-size: 16px;
@@ -50,6 +60,41 @@ body {
     padding: 10px 15px;
     margin-left: 20px;
 }
+.header-bottom {
+    padding: 15px 0;
+}
 .header-bottom.nav {
     font-size: 16px;
+    margin: 0;
+}
+hr {
+    border: none;
+    background-color:#EFEFEF;
+    height: 1px;
+}
+.banner {
+    background-image: url("../images/kreslo-2.png");
+    background-repeat: no-repeat; /*no-repeat: Устанавливает одно фоновое изображение в элементе без его повторений,*/
+    background-size: cover; /*Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока.*/
+    background-position: center center; /*центрует картинку по вертикале и горизонтали*/
+    padding-top: 150px; /*отступ с верху*/
+    padding-bottom: 150px; /*отступ с низу*/
+    color: #fff; /*цвет текста*/
+}
+.title {
+    font-size: 48px;
+    font-weight: 700; /*жирность шрифта*/
+}
+.banner p {
+    margin-bottom: 50px;
+    max-width: 315px; /*максимальное значение блока*/
+}
+.btn {
+    color: #fff; /*цвет текста*/
+    text-decoration: none; /*убирает подчеркивание кнопки*/
+    border-radius: 20px;
+    border: #fff 2px solid;
+    background-color: transparent; /*transparent Устанавливает прозрачный фон.*/
+    padding: 10px 15px;
+     
 }
