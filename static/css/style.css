@@ -59,6 +59,11 @@ body {
     background-color: transparent; /*transparent Устанавливает прозрачный фон.*/
     padding: 10px 15px;
     margin-left: 20px;
+    transition: 1s ease; /*анимация при наведение*/
+     cursor: pointer;    /*-это рука при наведение (нежно прописывать только на кнопки btn, в теги а стили есть )*/
+}
+.header-info button:hover{
+    background-color:#66C05D;
 }
 .header-bottom {
     padding: 15px 0;
@@ -95,6 +100,26 @@ hr {
     border-radius: 20px;
     border: #fff 2px solid;
     background-color: transparent; /*transparent Устанавливает прозрачный фон.*/
-    padding: 10px 15px;
-     
+    padding: 10px 35px;
+    transition: 1s ease; /*анимация при наведение*/
+}
+.btn:hover {
+    background-color: #fff; /*цвет блока*/
+    color: #333333; /*цвет текста*/
+}
+.bg-white {
+    background-color: #fff; /*цвет блока*/    
+}
+/*GRID верстание*/
+.grid {
+    display:grid; /*display:grid- работает только с разметкой колонок*/
+    grid-template-columns:repeat(4,1fr); /* (1fr 1fr 1fr 1fr можно написать)создаём 4 блока(солонки)*/
+}
+.grid-item-title {
+    grid-column: 1/4; /*h3-захватывает 4 колонки*/
+    grid-row: 1/2;    /*строчка захватывает 2 колонки*/
+}
+.grid-item-img {
+    grid-column: 1/4; /*h3-захватывает 4 колонки*/
+    grid-row: 1/2;    /*строчка захватывает 2 колонки*/
 }
