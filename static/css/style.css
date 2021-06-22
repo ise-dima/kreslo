@@ -115,7 +115,34 @@ hr {
     background-color: #fff; /*цвет блока*/    
 }
 .bg-green {
-    background-color: #66C05D; /*цвет блока*/   
+    background-color: #66C05D; /*цвет блока*/
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*установить блок по центру относительно  зелёного блока*/
+}
+.bg-green-item {
+    flex: 0 0 60%; /*между этими ячейками,из ходя ширины 100%*/
+}
+.bg-green-img {
+    flex: 0 0 40%; /*между этими ячейками,из ходя ширины 100%*/
+    text-align: center;
+}
+.bg-green h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.bg-green input {
+    font-size: 14px;
+    border: #fff 1px solid;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+.bg-green.btn {
+   display: block; /*автоматический отступ между текстом и ссылкой*/
+   text-align: center;
+   max-width: 150px;
 }
 /*GRID верстание*/   /*.grid-это основной блок*/
 .grid {
@@ -134,13 +161,30 @@ hr {
 }
 .grid-item-left {
     grid-column: 1/3; /* (1/3 1-начало 3-конец горизонталь)*/
-    grid-row: 3/4;    /*строчка захватывает 2 колонки (1/2 1-начало 2-конец вертикаль)*/
+    grid-row: 3/4;    /*(3/4 3-начало 4-конец вертикаль)*/
 }
 .grid-item-right {
-    grid-column: 3/5; /* (1/3 1-начало 3-конец горизонталь)*/
-    grid-row: 3/4;    /*строчка захватывает 2 колонки (1/2 1-начало 2-конец вертикаль)*/
+    grid-column: 3/5; /* (3/5 3-начало 5-конец горизонталь)*/
+    grid-row: 3/4;    /* (3/4 3-начало 4-конец вертикаль)*/
 }
 .grid-item-catalog {
     text-align: center; /*Текст по центру(для всех блоков,для <p> и для <a>)*/
-    padding: 15px;
+    padding: 15px 30px;
+}
+.grid-item-catalog.bg-white {
+   padding: 15px 30px;
+}
+.grid-price {
+   font-size: 21px;
+   font-weight: 500;   
+}
+.grid-btn {
+    border-radius: 20px;
+    border: #66C05D 2px solid;
+    background-color:#66C05D;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: 1s ease;
+    cursor: pointer;
 }
