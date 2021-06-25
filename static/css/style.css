@@ -115,12 +115,41 @@ hr {
     background-color: #fff; /*цвет блока*/    
 }
 .bg-green {
-    background-color: #66C05D;
+    background-color: #66C05D; /*цвет фон*/
+    color: #fff; /*цвет текста*/
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*расположить блок по центру (flex)*/
+}
+.bg-green-item {
+    flex: 0 0 60%;
+}
+.bg-green-img {
+    flex: 0 0 40%;
+    text-align: center;
+}
+.bg-green h3 {
+    font-size: 18px;
+    font-weight:700;
+    margin-top: 0;
+}
+.bg-green input {
+    font-size:14px;
+    border: #fff 1px solid;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+.bg-green .btn {
+    display: block; /* создаёт отступ между текстом и ссылкой */
+    text-align: center; /*текст по центру*/
+    max-width: 150px; /*максимальная ширина*/
 }
 /*GRID верстание*/
 .grid {
     display:grid; /*display:grid- работает только с разметкой ячеек*/
     grid-template-columns:repeat(4,1fr); /* (1fr 1fr 1fr 1fr можно написать)создаём 4 блока(колонки)*/
+    grid-gap:0 30px; /*расстояние между блоками в (grid)*/
 }
 .grid-item-title {
     grid-column: 1/4; /*1-начало 4-конец (по горизонтали)*/
@@ -129,6 +158,7 @@ hr {
 .grid-item-img {
     grid-column: 4/5; /*4-начало 5-конец (по горизонтали)*/
     grid-row: 1/2;    /*1-начало 2-конец (по вертикале)*/
+    text-align: center; /*текст по центру (или картинку)*/
 }
 .grid-item-left {
     grid-column: 1/3; /*1-начало 3-конец (по горизонтали)*/
@@ -137,5 +167,26 @@ hr {
 .grid-item-right {
     grid-column: 3/5; /*3-начало 5-конец (по горизонтали)*/
     grid-row: 3/4;    /*3-начало 4-конец (по вертикале)*/
+}
+.grid-item-catalog {
+    text-align: center; /*текст по центру*/
+    padding: 15px;
+}
+.grid-item-catalog .bg-white {
+    padding:15px 30px;
+}
+.grid-price {    
+    font-size: 21px;
+    font-weight: 500;   
+}
+.grid-btn {
+    border-radius: 20px;
+    border: #66C05D 2px solid;
+    background-color:#66C05D; /*цвет фон.*/
+    color: #fff; /*цвет текста*/
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: 1s ease; /*анимация при наведение*/
+     cursor: pointer;    /*-это рука при наведение (нежно прописывать только на кнопки btn, в теги а стили есть )*/
 }
 
