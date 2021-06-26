@@ -104,7 +104,7 @@ hr {
     border-radius: 20px;
     border: #fff 2px solid;
     background-color: transparent; /*transparent Устанавливает прозрачный фон.*/
-    padding: 10px 35px;
+    padding: 9px 35px;
     transition: 1s ease; /*анимация при наведение*/
 }
 .btn:hover {
@@ -126,7 +126,7 @@ hr {
     flex: 0 0 60%;
 }
 .bg-green-img {
-    flex: 0 0 40%;
+    flex: -1 0 40%;
     text-align: center;
 }
 .bg-green h3 {
@@ -143,7 +143,10 @@ hr {
 .bg-green .btn {
     display: block; /* создаёт отступ между текстом и ссылкой */
     text-align: center; /*текст по центру*/
-    max-width: 150px; /*максимальная ширина*/
+    max-width: 113px; /*максимальная ширина*/
+}
+.catalog {
+    padding-top: 100px;
 }
 /*GRID верстание*/
 .grid {
@@ -184,9 +187,37 @@ hr {
     border: #66C05D 2px solid;
     background-color:#66C05D; /*цвет фон.*/
     color: #fff; /*цвет текста*/
-    padding: 10px 15px;
+    padding: 10px 40px;
     text-decoration: none;
+    transition: 1s ease; /*анимация при наведение*/
+    cursor: pointer;    /*-это рука при наведение (нежно прописывать только на кнопки btn, в теги а стили есть )*/
+}
+.footer-info span {
+    font-size: 16px;
+}
+.footer-info button {
+    font-size: 14px;
+    border-radius: 20px;
+    border: #66C05D 2px solid;
+    background-color: transparent; /*transparent Устанавливает прозрачный фон.*/
+    padding: 10px 15px;
+    margin-left: 20px;
     transition: 1s ease; /*анимация при наведение*/
      cursor: pointer;    /*-это рука при наведение (нежно прописывать только на кнопки btn, в теги а стили есть )*/
 }
-
+.footer-info button:hover{
+    background-color:#66C05D;
+}
+.footer-bottem {
+    display: flex;
+    justify-content: space-between;
+    color:#828282;
+    padding: 15px 0px;
+}
+.footer-bottem p {
+    margin: 0;
+}
+.footer-bottem a {
+    color:#828282;
+    text-decoration: none; 
+}
