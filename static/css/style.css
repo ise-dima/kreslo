@@ -166,10 +166,12 @@ hr {
 .grid-item-left {
     grid-column: 1/3; /*1-начало 3-конец (по горизонтали)*/
     grid-row: 3/4;    /*3-начало 4-конец (по вертикале)*/
+    margin-top: 100px;
 }
 .grid-item-right {
     grid-column: 3/5; /*3-начало 5-конец (по горизонтали)*/
     grid-row: 3/4;    /*3-начало 4-конец (по вертикале)*/
+    margin-top: 100px;
 }
 .grid-item-catalog {
     text-align: center; /*текст по центру*/
@@ -192,8 +194,14 @@ hr {
     transition: 1s ease; /*анимация при наведение*/
     cursor: pointer;    /*-это рука при наведение (нежно прописывать только на кнопки btn, в теги а стили есть )*/
 }
+.footer-top {
+    display: flex;
+    justify-content: space-between; /*растянуть блоки по краям*/
+    align-items: center;
+}
 .footer-info span {
     font-size: 16px;
+    margin-left: 20px;
 }
 .footer-info button {
     font-size: 14px;
@@ -205,8 +213,38 @@ hr {
     transition: 1s ease; /*анимация при наведение*/
      cursor: pointer;    /*-это рука при наведение (нежно прописывать только на кнопки btn, в теги а стили есть )*/
 }
-.footer-info button:hover{
-    background-color:#66C05D;
+.footer-info button:hover{ 
+    background-color:#66C05D; /*анимация при наведения курсора*/
+}
+.social {
+    display: flex;
+    align-items: center; /*текст по центру*/
+    list-style-type: none; /*убирает все точки в элементе li */
+    padding-left: 0px;
+}
+.social-item {
+    margin-right: 20px;
+}
+.social-link {
+    display: block; /* создаёт блок */
+    width: 45px; /*размер блока (ширина) */
+    height: 45px; /* размер блока (высота) */
+    border: #66C05D 2px solid;
+    border-radius: 100%; /*создаёт круг*/
+    background-repeat: no-repeat; /*для работы с картинками (для всех,чтобы картинки не повторялись)*/
+    background-position: center; /*отцентровать изображение по центру */
+}
+.social-youtube {
+    background-image: url("../svg/youtube-logo.svg");
+}
+.social-vk {
+    background-image: url("../svg/vk-logo.svg");
+}
+.social-fb {
+    background-image: url("../svg/facebook-logo.svg");
+}
+.social-instagram {
+    background-image: url("../svg/instagram-logo.svg");
 }
 .footer-bottem {
     display: flex;
